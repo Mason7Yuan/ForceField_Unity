@@ -80,7 +80,7 @@ public class LerpGravity : MonoBehaviour
         }
     }
 
-    public float fixedLerp(float start, float end, float timeStartLerp, float lerpTime)     // Using Time.time might be ugly, need to change to using int*Time,fixedDeltaTime.
+    public float fixedLerp(float start, float end, float timeStartLerp, float lerpTime)
     {
         float timeSinceStart = Time.fixedTime - timeStartLerp;
         float percentageComplete = timeSinceStart / lerpTime;
